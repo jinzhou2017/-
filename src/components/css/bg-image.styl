@@ -1,0 +1,8 @@
+
+bg-image($name)
+  background-image url($name+"@2x.png")
+  background-repeat no-repeat
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+  bg-image($name)
+    background-image url($name+"@3x.png")
+    background-repeat no-repeat
